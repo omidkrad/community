@@ -84,7 +84,7 @@ image](https://hub.docker.com/r/docker/compose/).
     "$PWD:/rootfs/$PWD"` option to mount it as a volume and the `-w="/rootfs/$PWD"` to
     change the working directory.
 
-        docker run \
+        docker run --rm \
             -v /var/run/docker.sock:/var/run/docker.sock \
             -v "$PWD:/rootfs/$PWD" \
             -w="/rootfs/$PWD" \
